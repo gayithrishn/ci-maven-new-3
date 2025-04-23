@@ -13,8 +13,12 @@ public class App
         System.out.println("this is my first jenkins CI pipeline");
         for(int i=1;i<=10;i++)
         {
-            System.out.println("is is:" + i);
-            System.out.println("add webhook successfully");
+            if(i==4)
+            {
+                break;
+            }
+
+            System.out.println(i);
         }
     }
 }
